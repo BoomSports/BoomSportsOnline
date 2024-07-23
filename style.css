@@ -142,19 +142,21 @@ header .fa-bars {
     border: .2rem solid #97FB57;
 }
 
-.product {
+
+/*APARTADO DE DESCARGA APPSTORE-PLAYSTORE */
+.descarga {
     text-align: center;
     margin: 100px 0;
 }
 
-.product .box-container {
+.descarga .box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.product .box-container .box {
+.descarga .box-container .box {
     height: 25rem;
     width: 25rem;
     background: #171717;
@@ -165,7 +167,7 @@ header .fa-bars {
     cursor: pointer;
 }
 
-.product .box-container .box i{
+.descarga .box-container .box i{
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
@@ -178,27 +180,27 @@ header .fa-bars {
     transition: .2s;
 }
 
-.product .box-container .box h3 {
+.descarga .box-container .box h3 {
     font-size: 2rem;
     color: #97FB57;
     transition: .2s;
 }
 
-.product .box-container .box p {
+.descarga .box-container .box p {
     font-size: 1.3rem;
     padding: .7rem 2rem;
     color: #909090;
 }
 
-.product .box-container .box:hover i {
+.descarga .box-container .box:hover i {
     background: #97FB57;
 }
 
-.product .box-container .box:hover h3 {
+.descarga .box-container .box:hover h3 {
     color: #909090;
 }
 
-.product button {
+.descarga button {
     height: 5rem;
     width: 20rem;
     border-radius: 1rem;
@@ -211,11 +213,13 @@ header .fa-bars {
     margin-top: 50px;
 }
 
-.product button:hover {
+.descarga button:hover {
     background: none;
     border: .2rem solid #97FB57;
 }
 
+
+/*APARTADO DE SOCIOS*/
 .about {
     background: #171717;
 }
@@ -253,7 +257,50 @@ header .fa-bars {
     color: #fff;
     padding: 1rem 0;
 }
+.about .box-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
 
+.about .box-container .box {
+    width: 28rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .3);
+    background: #0c0b0b;
+    margin: 4rem 2rem;
+}
+
+.about .box-container .box img {
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .6rem solid #97FB57;
+    border-left: .6rem solid #909090;
+    border-bottom: .6rem solid #909090;
+}
+
+.about .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+.about .box-container .box p {
+    font-size: 1.4rem;
+    color: #909090;
+    padding: 1.3rem .1rem;
+}
+
+.about .box-container .box .stars i {
+    font-size: 1.6rem;
+    color: #ffc246;
+    padding: 1.3rem .1rem;
+}
 .about .row .content button {
     height: 5rem;
     width: 17rem;
