@@ -31,6 +31,7 @@ body {
     padding: 6rem 1rem 0 0;
     letter-spacing: .2rem;
     font-weight: 600;
+    text-shadow: 3px 5px 5px #909090;
 }
 
 .title {
@@ -218,8 +219,57 @@ header .fa-bars {
     border: .2rem solid #97FB57;
 }
 
+/*SOCIOS MODIFICADO PARA CENTRAR*/
+.socios {
+    background: #171717;
+}
+.socios .box-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
 
-/*APARTADO DE SOCIOS*/
+.socios .box-container .box {
+    width: 28rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .3);
+    background: #0c0b0b;
+    margin: 4rem 2rem;
+}
+
+.socios .box-container .box img {
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .6rem solid #97FB57;
+    border-left: .6rem solid #909090;
+    border-bottom: .6rem solid #909090;
+}
+
+.socios .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+.socios .box-container .box p {
+    font-size: 1.4rem;
+    color: #909090;
+    padding: 1.3rem .1rem;
+}
+
+.socios .box-container .box .stars i {
+    font-size: 1.6rem;
+    color: #ffc246;
+    padding: 1.3rem .1rem;
+}
+
+
+/*APARTADO DE SOCIOS ORIGINAL
 .socios {
     background: #171717;
 }
@@ -234,6 +284,7 @@ header .fa-bars {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .socios .row .image img {
@@ -317,7 +368,7 @@ header .fa-bars {
 .socios .row .content button:hover {
     background: none;
     border: .2rem solid #97FB57;
-}
+}*/
 
 
 /*APARTADO NOVEDADES*/
@@ -329,7 +380,6 @@ header .fa-bars {
     padding: 4rem 0;
     flex-wrap: wrap;
 }
-
 .novedades .box-container .box {
     background: #171717;
     height: 25rem;
@@ -338,7 +388,6 @@ header .fa-bars {
     text-align: center;
     border-radius: 1rem;
 }
-
 .novedades .box-container .box i {
     height: 10rem;
     width: 10rem;
@@ -349,12 +398,10 @@ header .fa-bars {
     margin-top: 2rem;
     font-size: 5rem;
 }
-
 .novedades .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
 }
-
 .novedades .box-container .box p {
     font-size: 1.5rem;
     color: #909090;
@@ -365,7 +412,6 @@ header .fa-bars {
 .team {
     background: #171717;
 }
-
 .team .box-container {
     display: flex;
     justify-content: center;
@@ -500,6 +546,7 @@ header .fa-bars {
     color: #97FB57;
     text-align: center;
     font-size: 15px;
+    text-shadow: 3px 5px 5px #909090;
 }
 
 /*ACTIVACION DE MENU DESPLEGABLE SUPERIOR*/
