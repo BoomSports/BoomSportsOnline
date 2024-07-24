@@ -220,15 +220,15 @@ header .fa-bars {
 
 
 /*APARTADO DE SOCIOS*/
-.about {
+.socios {
     background: #171717;
 }
 
-.about .title {
+.socios .title {
     margin-bottom: 3rem;
 }
 
-.about .row {
+.socios .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,35 +236,35 @@ header .fa-bars {
     text-align: center;
 }
 
-.about .row .image img {
+.socios .row .image img {
     height: 30vh;
     width: 50vw;
     margin-left: 100px;
 }
 
-.about .row .content {
+.socios .row .content {
     padding-left: 5rem;
     margin: 5rem 0;
 }
 
-.about .row .content h3 {
+.socios .row .content h3 {
     font-size: 3rem;
     color: #97FB57;
 }
 
-.about .row .content p {
+.socios .row .content p {
     font-size: 1.6rem;
     color: #fff;
     padding: 1rem 0;
 }
-.about .box-container {
+.socios .box-container {
     display: flex;
     justify-content: center;
     padding-top: 4rem;
     flex-wrap: wrap;
 }
 
-.about .box-container .box {
+.socios .box-container .box {
     width: 28rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -273,7 +273,7 @@ header .fa-bars {
     margin: 4rem 2rem;
 }
 
-.about .box-container .box img {
+.socios .box-container .box img {
     height: 8.5rem;
     width: 8.5rem;
     object-fit: cover;
@@ -284,24 +284,24 @@ header .fa-bars {
     border-bottom: .6rem solid #909090;
 }
 
-.about .box-container .box h3 {
+.socios .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
     padding: 0 .5rem;
 }
 
-.about .box-container .box p {
+.socios .box-container .box p {
     font-size: 1.4rem;
     color: #909090;
     padding: 1.3rem .1rem;
 }
 
-.about .box-container .box .stars i {
+.socios .box-container .box .stars i {
     font-size: 1.6rem;
     color: #ffc246;
     padding: 1.3rem .1rem;
 }
-.about .row .content button {
+.socios .row .content button {
     height: 5rem;
     width: 17rem;
     background: #97FB57;
@@ -314,12 +314,14 @@ header .fa-bars {
     margin-top: 2rem;
 }
 
-.about .row .content button:hover {
+.socios .row .content button:hover {
     background: none;
     border: .2rem solid #97FB57;
 }
 
-.course .box-container {
+
+/*APARTADO NOVEDADES*/
+.novedades .box-container {
     width: 85%;
     display: flex;
     justify-content: center;
@@ -328,7 +330,7 @@ header .fa-bars {
     flex-wrap: wrap;
 }
 
-.course .box-container .box {
+.novedades .box-container .box {
     background: #171717;
     height: 25rem;
     width: 25rem;
@@ -337,7 +339,7 @@ header .fa-bars {
     border-radius: 1rem;
 }
 
-.course .box-container .box i {
+.novedades .box-container .box i {
     height: 10rem;
     width: 10rem;
     line-height: 8rem;
@@ -348,29 +350,30 @@ header .fa-bars {
     font-size: 5rem;
 }
 
-.course .box-container .box h3 {
+.novedades .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
 }
 
-.course .box-container .box p {
+.novedades .box-container .box p {
     font-size: 1.5rem;
     color: #909090;
     padding: 1rem 0;
 }
 
-.review {
+/*APARTADO EQUIPO DE TRABAJO-SOCIOS*/
+.team {
     background: #171717;
 }
 
-.review .box-container {
+.team .box-container {
     display: flex;
     justify-content: center;
     padding-top: 4rem;
     flex-wrap: wrap;
 }
 
-.review .box-container .box {
+.team .box-container .box {
     width: 28rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -379,7 +382,7 @@ header .fa-bars {
     margin: 4rem 2rem;
 }
 
-.review .box-container .box img {
+.team .box-container .box img {
     height: 8.5rem;
     width: 8.5rem;
     object-fit: cover;
@@ -390,24 +393,24 @@ header .fa-bars {
     border-bottom: .6rem solid #909090;
 }
 
-.review .box-container .box h3 {
+.team .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
     padding: 0 .5rem;
 }
 
-.review .box-container .box p {
+.team .box-container .box p {
     font-size: 1.4rem;
     color: #909090;
     padding: 1.3rem .1rem;
 }
 
-.review .box-container .box .stars i {
+.team .box-container .box .stars i {
     font-size: 1.6rem;
     color: #ffc246;
     padding: 1.3rem .1rem;
 }
-
+/*APARTADO DE ENVIAR UN MENSAJE-EMAIL, OCULTO POR EL MOMENTO*/
 .contact {
     background: #171717;
 }
@@ -464,6 +467,7 @@ header .fa-bars {
     border: .2rem solid #97FB57;
 }
 
+/*ICONOS DE FACEBOOK, WHATSAPP, ETC*/
 .footer {
     text-align: center;
 }
@@ -473,8 +477,8 @@ header .fa-bars {
 }
 
 .footer .icons a {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 5rem;
+    width: 5rem;
     line-height: 4.2rem;
     text-align: center;
     border-radius: 50%;
@@ -492,6 +496,13 @@ header .fa-bars {
     border-color: #97FB57;
 }
 
+.footer .copyright p{
+    color: #97FB57;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*ACTIVACION DE MENU DESPLEGABLE SUPERIOR*/
 @media (max-width: 768px) {
     
     html {
