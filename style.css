@@ -372,6 +372,10 @@ header .fa-bars {
 
 
 /*APARTADO NOVEDADES*/
+
+.novedades {
+    background: #171717;
+}
 .novedades .box-container {
     width: 85%;
     display: flex;
@@ -514,6 +518,9 @@ header .fa-bars {
 }
 
 /*ICONOS DE FACEBOOK, WHATSAPP, ETC*/
+.footer {
+    background: #171717;
+}
 .footer {
     text-align: center;
 }
