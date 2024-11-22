@@ -24,6 +24,9 @@ body {
     background-color: #121212;
 }
 
+.cuerpo{
+    background-color: #171717;
+}
 .heading {
     font-size: 4rem;
     color: #97FB57;
@@ -44,7 +47,7 @@ body {
 
 header {
     width: 100%;
-    background: #171717;
+    background-color: #171717;
     position: fixed;
     display: flex;
     align-items: center;
@@ -102,6 +105,7 @@ header .fa-bars {
 }
 
 .home .content {
+    background-color: #171717;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,9 +152,11 @@ header .fa-bars {
 .descarga {
     text-align: center;
     margin: 100px 0;
+    background: #171717;
 }
 
 .descarga .box-container {
+    background: #171717;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -228,6 +234,7 @@ header .fa-bars {
     justify-content: center;
     padding-top: 4rem;
     flex-wrap: wrap;
+    background: #171717;
 }
 
 .socios .box-container .box {
@@ -379,6 +386,7 @@ header .fa-bars {
     margin:  0 auto;
     padding: 4rem 0;
     flex-wrap: wrap;
+    background: #171717;
 }
 .novedades .box-container .box {
     background: #171717;
@@ -467,7 +475,7 @@ header .fa-bars {
     justify-content: center;
     padding: 5rem 0;
     text-align: center;
-}
+    }
 
 .contact .row .form-container {
     width: 50%;
@@ -550,6 +558,7 @@ header .fa-bars {
 }
 
 .footer .politica p{
+    /*background-color: #0c0b0b;*/
     color: #97FB57;
     text-align: center;
     font-size: 15px;
