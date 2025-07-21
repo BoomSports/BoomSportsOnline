@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHRWWM9S91"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JHRWWM9S91');
-</script>
-
-	
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta property="og:image" content="images/BSIcon.jpg"/>
-	
+
     <title>Boom Sports Online</title>
     <link rel="shortcut icon" href="images/BSIcon.ico">
 	<script src="https://kit.fontawesome.com/2a0386a76c.js" crossorigin="anonymous"></script>
@@ -49,6 +38,7 @@
 
 
     <section class="home" id="home">
+        
         <!--<div class="content">
             <h1>App Boom Sports</h1>
             <p>Toma el control de tu </p>
@@ -56,6 +46,36 @@
         </div>!-->
     </section>
 
+    <section class="gpt" id="gpt">
+        <h1 class="heading">Pregunta a ChatGPT "Directorio de centros deportivos"</h1>
+        <div>
+            <form class="title" id="chat-form" onsubmit="enviarPregunta(event)">
+            <label for="pregunta">¿Qué deseas saber?</label><br>
+             <input type="text" id="pregunta" name="pregunta" required style="width: 50%; padding: 6px;">
+            <button type="submit" style="margin-top: 6px;">Consultar</button>
+            </form>
+
+        <script>
+            function enviarPregunta(event) {
+            event.preventDefault();
+            const pregunta = document.getElementById("pregunta").value;
+             //url del sheets de google   
+            const urlWebhook = "https://script.google.com/macros/s/AKfycbxMZIfop2d43mzmOG0BCeTx__Se-tZsoThCj17BePHj-sa7UlpZA4cz6AOkCcq1Fjw/exec";
+
+            // Enviar a Google Sheets
+            fetch(urlWebhook, {
+                method: 'POST',
+                body: JSON.stringify({ pregunta: pregunta }),
+                headers: { 'Content-Type': 'application/json' }
+            });
+
+              // Redirigir a ChatGPT personalizado
+            const gptUrl = `https://chat.openai.com/g/g-68191275e3fc8191858d8e40a54a3b65-boomsports-directorio-mexicali?prompt=${encodeURIComponent(pregunta)}`;
+            window.open(gptUrl, "_blank");
+            }
+        </script>
+        </div>
+    </section>
 
     <section class="descarga" id="descarga">
         <h1 class="heading">Descargas</h1>
@@ -83,14 +103,32 @@
                     <img src="images/cambala.jpg" alt="">
                 </a>
                 <h3>App Cambalachero</h3>
-                		<div class="stars">
-                   			 <i class="fas fa-star"></i>
-                    			<i class="fas fa-star"></i>
-                    			<i class="fas fa-star"></i>
-                		</div> !-->
-                          </div>  
-            
-	</div>    		
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div> !-->
+            </div>  
+            <!--         
+			<div class="box">
+                <img src="images/BLB.jpg" alt="">
+                <h3>BLB Digital</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>           
+   			<div class="box">
+                <img src="images/X-FC.jpg" alt="">
+                <h3>Xochicalli FC</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>   !-->        
+		</div>    		
     </section>
 
 
@@ -194,26 +232,7 @@
 
     </section>
 
-    <!-- <section class="contact" id="contact">
-
-        <h1 class="heading">Contacto</h1>
-        <h3>qui suscipit illum error voluptatem.</h3> 
-        <div class="row">
-            <div class="form-container">
-
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Correo">
-                    <input type="number" placeholder="Telefono">
-                    <textarea cols="15" rows="5" placeholder="Mensaje"></textarea >
-                    <input type="submit" value="Enviar">        
-                </form>
-
-            </div>
-        </div>
-    </section> !-->
-
-
+   
 <style>
     .footer{ 
         background-color: black;

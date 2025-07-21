@@ -148,6 +148,84 @@ header .fa-bars {
 }
 
 
+/*APARTADO DE CHAT GPT */
+.gpt {
+    text-align: center;
+    margin: 100px 0;
+    background: #171717;
+}
+
+.gpt .box-container {
+    background: #171717;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.gpt .box-container .box {
+    height: 25rem;
+    width: 25rem;
+    background: #171717;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.gpt .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #909090 ;
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+
+.gpt .box-container .box h3 {
+    font-size: 2rem;
+    color: #97FB57;
+    transition: .2s;
+}
+
+.gpt .box-container .box p {
+    font-size: 1.3rem;
+    padding: .7rem 2rem;
+    color: #909090;
+}
+
+.gpt .box-container .box:hover i {
+    background: #97FB57;
+}
+
+.gpt .box-container .box:hover h3 {
+    color: #909090;
+}
+
+.gpt button {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: #97FB57;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    margin-top: 50px;
+}
+
+.gpt button:hover {
+    background: none;
+    border: .2rem solid #97FB57;
+}
+
+
 /*APARTADO DE DESCARGA APPSTORE-PLAYSTORE */
 .descarga {
     text-align: center;
@@ -637,8 +715,6 @@ header .fa-bars {
         width: 90%;
         padding: 0;
     }
-
-
 
 }
 
